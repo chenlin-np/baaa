@@ -52,7 +52,7 @@ public class FormsDocumentsSearchImpl implements FormsDocumentsSearch {
 	private long startTime, endTime;
 	
 	private static Logger log = LoggerFactory.getLogger(FormsDocumentsSearchImpl.class);
-	private static String FACETS_PATH = "/etc/tags/girlscouts";
+	private static String FACETS_PATH = "/etc/tags/northpoint";
 
 	private final String COUNCIL_SPE_PATH = "/etc/tags/";
 
@@ -70,28 +70,23 @@ public class FormsDocumentsSearchImpl implements FormsDocumentsSearch {
 		Map<String, List<FacetsInfo>> fts = null;
 		log.info("councilSpPath  [" +councilSpPath +"]");
 			fts = facetBuilder.getFacets(this.slingRequest, this.queryBuilder, councilSpPath);
-			if(fts==null){
-				throw null;
-			}
 		return fts;
 	}
 	
 	public void executeSearch(SlingHttpServletRequest slingRequest, QueryBuilder queryBuilder, String q, String path,String[] checkedTags,String councilSpecificPath, String formDocumentContentPath){
 		this.queryBuilder = queryBuilder;
 		this.slingRequest = slingRequest;
-		
+		searchResultsInfo = new SearchResultsInfo();
+
 		if(!councilSpecificPath.isEmpty() && councilSpecificPath!=null){
 			String councilSpPath=COUNCIL_SPE_PATH+councilSpecificPath;
-			try{
-				this.facets = loadFacets(councilSpPath);
-			}catch(Exception e){
-				log.error("Facets [" +COUNCIL_SPE_PATH +"] does not exists fall-back to default" );
-				this.facets = loadFacets(FACETS_PATH);
-			}
+			this.facets = loadFacets(councilSpPath);
 		}
 		try{
 			documentsSearch(path,q,checkedTags,formDocumentContentPath);
-		}catch(RepositoryException re){}
+		}catch(RepositoryException re){
+			re.printStackTrace();
+		}
 
 	}
 
@@ -99,9 +94,7 @@ public class FormsDocumentsSearchImpl implements FormsDocumentsSearch {
 
 		startTime = new Date().getTime();
 		System.out.println("Start Time: " + startTime);
-		
-		searchResultsInfo = new SearchResultsInfo();
-		
+				
 		Map<String,String> mapPath = new HashMap <String,String>();
 		
 		mapPath.put("group.p.or","true");
