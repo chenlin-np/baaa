@@ -11,7 +11,7 @@ public class Secret {
     // 32 byte, 256 bit secret key
     // secret must be exactly 32bytes in UTF-8 character encoding
     //protected static final String testkey = "11111111111111111111111111111111";
-    protected static final String key = "\u0008\u0008\u00a9\u00ae\u20ac\u0009\u00a5!\u01FC\u000CK\u263a/JMP7g/7O\u20a9";
+    protected static final String key = "\u0008\u0008\u00a9\u00ae\u20ac\u0009\u00a5!\u01FC\u000CK\u263a/JNQcd7g/7O\u20a9";
 
     // number of times a secret is salt-encrypted before writing to persistent store
     public static final int ITERATIONS = 2;
