@@ -1,4 +1,4 @@
-package com.northpoint.basics.exception;
+package com.northpointdigital.com.exception;
 
 public class NorthpointException extends Exception {
 

@@ -1,4 +1,4 @@
-package com.northpoint.basics.dataimport;
+package com.northpointdigital.com.dataimport;
 
 import java.io.Reader;
 

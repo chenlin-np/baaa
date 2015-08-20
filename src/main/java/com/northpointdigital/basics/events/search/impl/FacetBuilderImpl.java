@@ -1,4 +1,4 @@
-package com.northpoint.basics.events.search.impl;
+package com.northpointdigital.com.events.search.impl;
 
 import java.util.*;
 
@@ -19,9 +19,9 @@ import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ResourceResolverFactory;
-import com.northpoint.basics.events.search.EventsSrch;
-import com.northpoint.basics.events.search.FacetBuilder;
-import com.northpoint.basics.events.search.FacetsInfo;
+import com.northpointdigital.com.events.search.EventsSrch;
+import com.northpointdigital.com.events.search.FacetBuilder;
+import com.northpointdigital.com.events.search.FacetsInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

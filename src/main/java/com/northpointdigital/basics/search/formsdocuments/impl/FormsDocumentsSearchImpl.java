@@ -1,4 +1,4 @@
-package com.northpoint.basics.search.formsdocuments.impl;
+package com.northpointdigital.com.search.formsdocuments.impl;
 
 
 import java.util.ArrayList;
@@ -22,12 +22,12 @@ import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.Service;
 import org.apache.sling.api.SlingHttpServletRequest;
-import com.northpoint.basics.events.search.FacetBuilder;
-import com.northpoint.basics.events.search.FacetsInfo;
-import com.northpoint.basics.events.search.SearchResultsInfo;
-import com.northpoint.basics.search.DocHit;
-import com.northpoint.basics.search.formsdocuments.FormsDocumentsSearch;
-import com.northpoint.basics.search.utils.SearchUtils;
+import com.northpointdigital.com.events.search.FacetBuilder;
+import com.northpointdigital.com.events.search.FacetsInfo;
+import com.northpointdigital.com.events.search.SearchResultsInfo;
+import com.northpointdigital.com.search.DocHit;
+import com.northpointdigital.com.search.formsdocuments.FormsDocumentsSearch;
+import com.northpointdigital.com.search.utils.SearchUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

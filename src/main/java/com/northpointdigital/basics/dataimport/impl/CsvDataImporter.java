@@ -1,4 +1,4 @@
-package com.northpoint.basics.dataimport.impl;
+package com.northpointdigital.com.dataimport.impl;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -27,8 +27,8 @@ import org.slf4j.LoggerFactory;
 
 import com.day.cq.commons.jcr.JcrUtil;
 import com.day.text.csv.Csv;
-import com.northpoint.basics.dataimport.DataImporter;
-import com.northpoint.basics.exception.NorthpointException;
+import com.northpointdigital.com.dataimport.DataImporter;
+import com.northpointdigital.com.exception.NorthpointException;
 
 public class CsvDataImporter implements DataImporter {
     public static final String DEFAULT_DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss.SX";

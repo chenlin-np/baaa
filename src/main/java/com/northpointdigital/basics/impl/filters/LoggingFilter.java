@@ -1,4 +1,4 @@
-package com.northpoint.basics.impl.filters;
+package com.northpointdigital.com.impl.filters;
 
 import java.io.IOException;
 

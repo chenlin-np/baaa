@@ -1,4 +1,4 @@
-package com.northpoint.basics;
+package com.northpointdigital.com;
 
 /**
  * A simple service interface

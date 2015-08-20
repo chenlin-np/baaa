@@ -1,4 +1,4 @@
-package com.northpoint.basics.encryption.impl;
+package com.northpointdigital.com.encryption.impl;
 
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidKeyException;

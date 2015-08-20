@@ -1,6 +1,6 @@
-package com.northpoint.basics.encryption;
+package com.northpointdigital.com.encryption;
 
-import com.northpoint.basics.exception.NorthpointException;
+import com.northpointdigital.com.exception.NorthpointException;
 
 public interface FormEncryption {
 
