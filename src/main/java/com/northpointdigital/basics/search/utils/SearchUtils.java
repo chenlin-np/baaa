@@ -1,4 +1,4 @@
-package com.northpointdigital.com.search.utils;
+package com.northpointdigital.basics.search.utils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,9 +10,9 @@ import javax.jcr.RepositoryException;
 import javax.jcr.Session;
 
 import org.apache.sling.api.SlingHttpServletRequest;
-import com.northpointdigital.com.events.search.FacetsInfo;
-import com.northpointdigital.com.events.search.SearchResultsInfo;
-import com.northpointdigital.com.search.DocHit;
+import com.northpointdigital.basics.events.search.FacetsInfo;
+import com.northpointdigital.basics.events.search.SearchResultsInfo;
+import com.northpointdigital.basics.search.DocHit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

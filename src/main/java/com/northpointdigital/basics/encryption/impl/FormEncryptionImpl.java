@@ -1,12 +1,12 @@
-package com.northpointdigital.com.encryption.impl;
+package com.northpointdigital.basics.encryption.impl;
 
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Properties;
 import org.apache.felix.scr.annotations.Property;
 import org.apache.felix.scr.annotations.Service;
-import com.northpointdigital.com.dataimport.impl.DataImporterFactoryImpl;
-import com.northpointdigital.com.encryption.FormEncryption;
-import com.northpointdigital.com.exception.NorthpointException;
+import com.northpointdigital.basics.dataimport.impl.DataImporterFactoryImpl;
+import com.northpointdigital.basics.encryption.FormEncryption;
+import com.northpointdigital.basics.exception.NorthpointException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 @Component
 @Service(value = FormEncryption.class)
 @Properties({
-	@Property(name = "service.pid", value = "com.northpointdigital.com.encryption.FormEncryption", propertyPrivate = false),
+	@Property(name = "service.pid", value = "com.northpointdigital.basics.encryption.FormEncryption", propertyPrivate = false),
 	@Property(name = "service.description", value = "Northpoint Form Encryption Service", propertyPrivate = false),
 	@Property(name = "service.vendor", value = "Northpoint", propertyPrivate = false) })
 public class FormEncryptionImpl implements FormEncryption {

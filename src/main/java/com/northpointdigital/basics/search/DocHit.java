@@ -1,4 +1,4 @@
-package com.northpointdigital.com.search;
+package com.northpointdigital.basics.search;
 
 import java.util.Map;
 import java.util.regex.Matcher;

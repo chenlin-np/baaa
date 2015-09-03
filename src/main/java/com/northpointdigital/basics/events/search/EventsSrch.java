@@ -1,4 +1,4 @@
-package com.northpointdigital.com.events.search;
+package com.northpointdigital.basics.events.search;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.text.DateFormat;
@@ -17,8 +17,8 @@ import javax.jcr.Node;
 import javax.jcr.RepositoryException;
 
 import org.apache.sling.api.SlingHttpServletRequest;
-import com.northpointdigital.com.events.search.impl.FacetBuilderImpl;
-import com.northpointdigital.com.search.utils.SearchUtils;
+import com.northpointdigital.basics.events.search.impl.FacetBuilderImpl;
+import com.northpointdigital.basics.search.utils.SearchUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,7 +1,7 @@
-package com.northpointdigital.com.dataimport;
+package com.northpointdigital.basics.dataimport;
 
 import java.util.List;
-import com.northpointdigital.com.exception.NorthpointException;
+import com.northpointdigital.basics.exception.NorthpointException;
 
 public interface DataImporter {
     static String DEFAULT_DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss.SZ";

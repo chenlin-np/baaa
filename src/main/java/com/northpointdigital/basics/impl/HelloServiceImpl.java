@@ -1,4 +1,4 @@
-package com.northpointdigital.com.impl;
+package com.northpointdigital.basics.impl;
 
 import javax.jcr.Repository;
 
@@ -7,7 +7,7 @@ import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.Service;
 import org.apache.sling.jcr.api.SlingRepository;
 
-import com.northpointdigital.com.HelloService;
+import com.northpointdigital.basics.HelloService;
 
 /**
  * One implementation of the {@link HelloService}. Note that

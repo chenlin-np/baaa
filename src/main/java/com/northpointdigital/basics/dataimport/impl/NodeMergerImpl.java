@@ -1,4 +1,4 @@
-package com.northpointdigital.com.dataimport.impl;
+package com.northpointdigital.basics.dataimport.impl;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -16,15 +16,15 @@ import org.apache.felix.scr.annotations.Property;
 import org.apache.felix.scr.annotations.Service;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
-import com.northpointdigital.com.exception.NorthpointException;
+import com.northpointdigital.basics.exception.NorthpointException;
 
 import com.day.cq.commons.jcr.JcrUtil;
-import com.northpointdigital.com.dataimport.NodeMerger;
+import com.northpointdigital.basics.dataimport.NodeMerger;
 
 @Component
 @Service(value = NodeMerger.class)
 @Properties({
-	@Property(name = "service.pid", value = "com.northpointdigital.com.dataimport.nodemerger", propertyPrivate = false),
+	@Property(name = "service.pid", value = "com.northpointdigital.basics.dataimport.nodemerger", propertyPrivate = false),
 	@Property(name = "service.description", value = "Northpoint node merger service", propertyPrivate = false),
 	@Property(name = "service.vendor", value = "Northpoint", propertyPrivate = false) })
 public class NodeMergerImpl implements NodeMerger {

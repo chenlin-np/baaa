@@ -1,4 +1,4 @@
-package com.northpointdigital.com.search;
+package com.northpointdigital.basics.search;
 
 import javax.jcr.Node;
 import javax.jcr.RepositoryException;

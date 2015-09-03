@@ -1,11 +1,11 @@
-package com.northpointdigital.com.search.formsdocuments;
+package com.northpointdigital.basics.search.formsdocuments;
 
 import java.util.Map;
 import java.util.List;
 
 import org.apache.sling.api.SlingHttpServletRequest;
-import com.northpointdigital.com.events.search.FacetsInfo;
-import com.northpointdigital.com.events.search.SearchResultsInfo;
+import com.northpointdigital.basics.events.search.FacetsInfo;
+import com.northpointdigital.basics.events.search.SearchResultsInfo;
 
 import com.day.cq.search.QueryBuilder;
 

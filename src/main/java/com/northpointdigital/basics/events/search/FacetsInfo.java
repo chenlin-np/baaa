@@ -1,4 +1,4 @@
-package com.northpointdigital.com.events.search;
+package com.northpointdigital.basics.events.search;
 
 
 public class FacetsInfo {

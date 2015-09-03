@@ -1,4 +1,4 @@
-package com.northpointdigital.com.events.search;
+package com.northpointdigital.basics.events.search;
 
 import java.util.ArrayList;
 import java.util.HashMap;
